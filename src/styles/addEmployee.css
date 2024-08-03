@@ -1,0 +1,44 @@
+.add-employee{
+      width: 30%;
+      min-width: 380px;
+      margin: 25px auto;
+      border: 1px solid black;
+      padding: 30px;
+      border-radius: 16px;
+
+      >h1{
+            text-align: center;
+            color: tomato
+      }
+      form{
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0;
+            >input{
+                  width: 300px;
+                  margin: 10px auto;
+                  padding: 12px 14px;
+                  border:none;
+                  border-radius: 8px;
+                  background-color: rgb(201, 201, 198);
+
+            }
+            >.submit-btn ,.prev-btn{
+                  width: 300px;
+                  margin: 10px auto;
+                  padding: 12px 0px;
+                  border-radius: 8px;
+                  background-color: rgb(93, 181, 117);
+                  border: none;
+                  color: #fff;
+                  cursor: pointer;
+                  &::-moz-focus-inner{
+                        color: #000;
+                  }
+
+            }
+            .prev-btn{
+                  background-color: rgb(46, 100, 76);
+            }
+      }
+}
