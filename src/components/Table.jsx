@@ -10,9 +10,8 @@ const Table = ({
   onStartClick, 
   onCloseClick, 
   onViewClick, 
-  text, 
-  admin,  
-  onAddReview 
+  admin,
+  onAddReview
 }) => {
   return (
     <div className={className}>
@@ -47,7 +46,7 @@ const Table = ({
                       <Button
                         className="close-review"
                         text="Close Review"
-                        onClick={() => onCloseClick(item._id)}
+                        onClick={() => onCloseClick(reviewStatus[item._id][0]._id)}
                       />
                       <Button
                         className="view-review"
@@ -55,18 +54,20 @@ const Table = ({
                         onClick={() => onViewClick(item._id)}
                       />
                     </>
-                  ) : admin ? (
-                    <Button
-                      className="start-review"
-                      text="Start Review"
-                      onClick={() => onStartClick(item._id)}
-                    />
                   ) : (
-                    <Button
-                      className="start-review"
-                      text="Start Review"
-                      onClick={() => onAddReview(item._id)}
-                    />
+                    admin ?  (
+                      <Button
+                        className="start-review"
+                        text="Start Review"
+                        onClick={() => onStartClick(item._id)}
+                      />
+                    ) :(
+                      <Button
+                        className="start-review"
+                        text=" Add Review"
+                        onClick={() => onAddReview(item._id)}
+                      />
+                    )
                   )}
                   {admin && (
                     <Button

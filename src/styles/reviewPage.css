@@ -1,47 +1,73 @@
-.review-page{
+.review-page {
       width: 50%;
-      margin:  15px auto;
-      >h1{
-            text-align: center;
+      margin: 15px auto;
+    
+      > h1 {
+        text-align: center;
       }
-      .user-details-form{
+    
+      .user-details-form {
+        width: 80%;
+        margin: 15px auto;
+    
+        > p {
+          margin-left: 75px;
+          font-weight: 600;
+          font-size: 17px;
+          display: inline-block;
+        }
+    
+        #role {
+          margin-top: 10px;
+        }
+    
+        .review-form {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: center;
+    
+          > textarea {
             width: 80%;
-            margin: 15px auto;
-            >p{
-                  margin-left: 62px;
-                  font-weight: 600;
-                  font-size: 17px;
-                  /* width: 0px; */
-                  display: inline-block;
-            }
-            #role{
-                  margin-top: 10px;
-            }
-            > .review-form{
-                 
-                  display: flex;
-                  flex-direction: column;
-                  gap:8px;
-                  >textarea{
-                        width: 80%;
-                        margin: auto;
-                        resize: none;
-                        height: auto;
-                        min-height: 80px;
-                        padding: 10px;
-                        border-radius: 16px;
-                        font-size: 16px;
-                  }
-                  .review-submit-btn{
-                        width: 60%;
-                        margin: 10px auto;
-                        padding: 12px;
-                        border-radius: 18px;
-                        border: none;
-                        color: #fff;
-                        cursor: pointer;
-                        background-color: rgb(65, 142, 107);
-                  }
-            }
+            margin: auto;
+            resize: none;
+            height: auto;
+            min-height: 80px;
+            padding: 10px;
+            border-radius: 16px;
+            font-size: 16px;
+          }
+    
+          .button-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            width: 100%;
+          }
+    
+          .review-submit-btn,
+          .review-delete-btn {
+            width: 100px;
+            padding: 12px;
+            border-radius: 18px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+          }
+    
+          .review-submit-btn {
+            background-color: rgb(65, 142, 107);
+          }
+    
+          .review-delete-btn {
+            background-color: rgb(220, 53, 69);
+          }
+        }
       }
-}
+      .btn-container{
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+      }
+    }
+    

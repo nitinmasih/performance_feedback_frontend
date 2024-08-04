@@ -46,6 +46,9 @@ const UserView = () => {
       }
 
       const data = await response.json();
+      if (!data) {
+        alert("No review assigned to anyone")
+      }
 
       if (data.isEligible) {
         navigate(`/review/${employeeId}`, { state: { userId } });

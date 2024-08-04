@@ -5,7 +5,7 @@
       background-color: #f9f9f9;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-  
+    position: relative;
       > h1 {
           text-align: center;
           color: tomato;
@@ -17,7 +17,7 @@
           display: inline-block;
           font-weight: 600;
           text-align: center;
-          margin-left: 270px;
+          margin-left: 320px;
           /* margin-top: 15px; */
           font-size: 18px;
       }
@@ -55,6 +55,13 @@
                   }
               }
           }
+      }
+      .reviews-delete{
+        position: absolute;
+        background-color: rgb(231, 59, 59);
+        color: #e0e0e0;
+        right: 10px;
+        bottom: 15px;
       }
   }
   

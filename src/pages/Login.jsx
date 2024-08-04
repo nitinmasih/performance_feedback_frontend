@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/Button';
 import { useNavigate } from 'react-router-dom';
-import {jwtDecode} from 'jwt-decode'; // Corrected import
+import { jwtDecode } from 'jwt-decode'; // Corrected import
 import "../styles/login.css";
 
 // Access the environment variable
@@ -32,10 +32,8 @@ const Login = ({ setUser }) => {
 
                 if (response.ok) {
                     localStorage.setItem('token', data.token);
-                    localStorage.setItem('userId', data.user.id); 
+                    localStorage.setItem('userId', data.user.id);
                     const decoded = jwtDecode(data.token);
-
-                    console.log('User:', decoded);
                     setUser({
                         isAuthenticated: true,
                         role: decoded.role,

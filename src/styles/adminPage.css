@@ -65,18 +65,11 @@
     .admin-table .update {
       background-color: #ffc107;
       color: black;
-      border: none;
-      padding: 5px 10px;
-      border-radius: 5px;
-      cursor: pointer;
+  
     }
     
     .admin-table .start-review {
       background-color: #28a745;
-      color: white;
-      border: none;
-      padding: 5px 10px;
-      border-radius: 5px;
       cursor: pointer;
     }
     
@@ -93,7 +86,7 @@
       align-items: center;
       gap: 8px;
 }
-.start-review ,.update{
+/* .start-review {
       margin-left: 10px;
       cursor: pointer;
       padding: 4px 6px;
@@ -101,7 +94,7 @@
       border-radius: 8px;
       background-color: #20b38c;
       color: #fff;
-}
+} */
 .remove {
       margin-left: 5px;
       padding: 5px;

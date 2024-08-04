@@ -38,6 +38,7 @@ const AdminPage = () => {
         }
         const data = await response.json();
         setReviewStatus(data.reviewStatus);
+
       } catch (error) {
         console.error('Error fetching review status:', error);
       }
@@ -85,18 +86,13 @@ const AdminPage = () => {
         throw new Error('Failed to close review');
       }
 
-      const data = await response.json();
-      alert(data.message);
-
       // Update the review status locally
       setReviewStatus(prevStatus => {
         const newStatus = { ...prevStatus };
         Object.keys(newStatus).forEach(key => {
-          if (newStatus[key] === reviewId) {
-            newStatus[key] = false;
-          }
+          newStatus[key] = newStatus[key].filter(review => review._id !== reviewId);
         });
-        return newStatus;
+       setReviewStatus(newStatus);
       });
     } catch (error) {
       console.error('Error closing review:', error);

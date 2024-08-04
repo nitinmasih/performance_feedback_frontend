@@ -58,10 +58,7 @@ const AssignReview = () => {
       if (!response.ok) {
         throw new Error('Failed to initiate review');
       }
-
-      const data = await response.json();
       alert("Review Created Successfully");
-      console.log('Review initiated successfully:', data);
     } catch (error) {
       console.error('Error initiating review:', error);
     }
