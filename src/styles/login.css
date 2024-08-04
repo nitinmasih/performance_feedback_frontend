@@ -29,11 +29,11 @@
       padding: 12px 14px;
       border: none;
       border-radius: 8px;
-      background-color: rgb(155, 155, 152);
-      color: #fff;
+      background-color: rgb(225, 225, 222);
+      color: #363434;
       letter-spacing: 0.01em;
       &::placeholder {
-        color: #fff;
+        color: #363434;
       }
     }
     > .login-btn {
